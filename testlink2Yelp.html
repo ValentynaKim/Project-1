@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>darksky api</title>
+</head>
+
+<body>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript">
+
+      var ylink = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bar&limit=50&location=San francisco";
+      
+$.ajax({
+   url: ylink,
+   headers: {
+    'Authorization':'Bearer ygzo2cbJjvrHGClqUm3mSHfok9ZijgsGAaFe3za7ZnotunjVzfyC_KuA7WsTh0w36I981NmKURz6JV4JHQRkIl1_riqh2v-E-rcZTTfDIZF20j5F8l_VG7kIlL9IXXYx ',
+},
+   method: 'GET',
+   dataType: 'json',
+   success: function(data){
+   console.log(data);
+  }
+});
+
+ </script>
+
+</body>
+
+</html>

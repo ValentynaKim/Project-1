@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>dsky api</title>
+ 
+</head>
+
+<body>
+
+        
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript">
+
+var dslink ="https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/931a24fb86c0e16f5b65657a523b3b6a/37.7749,-122.4194";
+  $.ajax({
+    url: dslink,
+    method: "GET",
+    success: function (e){
+        console.log(e);
+  
+  
+}
+
+
+})
+
