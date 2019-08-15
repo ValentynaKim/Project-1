@@ -3,3 +3,32 @@ body {
     background-image: url("../images/backgraund.jpg");
     background-size: cover;
   }
+
+  #tbld{
+    width: 1054px;
+    height: 459px;
+    overflow: auto;
+  }
+  #table{
+      background-color: white;
+      width: 1054px;
+      height: 593px;
+      position: fixed;
+      margin: 73px 0 0 223px;
+      z-index: 10;
+      border-radius: 20px;
+      opacity: 0.9;
+  }
+  #weather{
+      background-color: white;
+      width: 1045px;
+      height: 61px;
+      position: fixed;
+      margin: 7px 0 0 227px;
+      z-index: 10;
+      border-radius: 20px;
+  }
+  ul{
+      margin: 11px 5px 4px 188px;
+      position: absolute;
+  }
