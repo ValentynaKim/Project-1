@@ -61,3 +61,31 @@ function drawTable(data) {
         drawRow(data.businesses[i]);
     }
  }
+
+ function drawRow(rowData) {
+   
+  var row = $("<tr />")
+  $("#tbl").append(row);
+  row.append($("<td>" +("<img src="+ rowData.image_url)+" "+ "</td>"));
+  row.append($("<td class="+"l"+">" + rowData.name + "</td>"));
+  row.append($("<td>" + rowData.rating + "</td>"));
+  row.append($("<td>" + rowData.display_phone + "</td>"));
+  row.append($("<td>" + rowData.location.address1 + "</td>"));
+  row.append($("<input class="+"ck"+"  value=" +rowData.name+"  type="+"checkbox"+"></input>"));
+
+  
+}
+var npl;
+   $(document).on("click","#ls",function(){
+ 
+      $("#tbl").empty();
+      int=$("#inps").val();
+      
+        t();
+        
+   });
+   
+
+
+
+ 
