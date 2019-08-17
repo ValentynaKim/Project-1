@@ -84,6 +84,26 @@ var npl;
         t();
         
    });
+
+   var arr=[];
+   var n;
+      $(document).on("click",".ck",function(){
+       n=$(this).val();
+   arr.push(n)
+   
+      
+      })
+   
+      $(document).on("click","#save",function(){
+   
+       npl=$("#name").val();
+   
+          database.ref(npl).push({
+           
+           name:arr
+           
+            });
+    });
    
 
 
